@@ -3,7 +3,7 @@ Services to research movements of the bitcoin flow (Summary and details)
 
 ## Development 
 
-Bitcoin services were trying to solve two most issues, getting a summary trades during a period using as references this URL https://www.mercadobitcoin.net/api/BTC/trades/1501871369/1501891200/. That development was divided into two parts:
+Bitcoin services were trying to solve two most issues, get a summary trades during a period using as references this URL https://www.mercadobitcoin.net/api/BTC/trades/1501871369/1501891200/. That development was divided into two parts:
 
 ### BackEnd
 Technologies: JDK 8, Spring Boot, Mockito (Testing)
@@ -98,7 +98,7 @@ Example:
 
 
 ##### -Trade by Id
-Based on the results of the summary services, it will be possible getting the particular information, that was implemented by thinking in the UI, as follows an example:
+Based on the results of the summary services, it will be possible getting the particular information, that was implemented by thinking in the UI, as follows:
 http://localhost:8080/api/bitcoins/trade/{tid}
 
 http://localhost:8080/api/bitcoins/trade/739725
@@ -106,7 +106,7 @@ http://localhost:8080/api/bitcoins/trade/739725
     "date": 1501871402,
     "price": 9711,
     "amount": 0.0151344,
-    "tid": 739725,
+    "tid": 739725,Using your preferred IDE (this project was developed using Eclipse), cloning this project in your desktop, after that you should import this one using MVN tools, finally you could put run the project.
     "type": "sell"
 }
 
@@ -114,4 +114,4 @@ http://localhost:8080/api/bitcoins/trade/739725
 Technologies:AngularJS@1.6.3
 
 ### Test Development
-Using your preferred IDE (this project was developed using Eclipse), cloning this project in your desktop before that import that one using MVN tools, finally you could put running on the project 
+Using your preferred IDE (this project was developed using Eclipse), cloning this project in your desktop, after that you should import this one using MVN tools, finally you could put run the project.
