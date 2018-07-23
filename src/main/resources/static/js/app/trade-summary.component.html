@@ -1,0 +1,55 @@
+<b>Summary Trade</b>
+<br>
+<div class="container-fluid">
+
+	<div class="container border-dark">
+		<div class="row">
+			<div class="col-sm">
+				<span> Sales Higher</span>
+				<ul ng-repeat="sales in $ctrl.summary,sales_higher">
+					<il> <a href="#">{{ $sales.price }}</a></il>
+				</ul>
+			</div>
+			<div class="col-sm">
+				<span> Buying Higher </span>
+				<ul ng-repeat="buyings in $ctrl.summary.buyings_higher">
+					<il> <a href="#">{{ $buyings.price }}</a></il>
+				</ul>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-sm">
+					<span> Sales Average </span>{{$ctrl.summary.sales_average}}
+				</div>
+				<div class="col-sm">
+					<span> Buy Average </span>{{$ctrl.summary.buyings_average}}
+				</div>
+			</div>
+			<br>
+
+
+			<div class="row">
+				<div class="col-sm">
+					<span> Sale Median </span>{{$ctrl.summary.sale_median}}
+				</div>
+				<div class="col-sm">
+					<span> Buy Median </span>{{$ctrl.summary.buying_median}}
+				</div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col">
+					<span>Standard Deviation Sale</span>{{$
+					ctrl.summary.standard_desviation_sale}}
+				</div>
+				<div class="col">
+					<span>Standard Deviation Buying</span>{{$ctrl.summary.standard_desviation_buying}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<button ng-click="$ctrl.showTradeMovement()">Graphic</button>
